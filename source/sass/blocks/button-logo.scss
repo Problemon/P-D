@@ -16,4 +16,8 @@
 .button-logo__text {
   font-size: 14px;
   font-weight: 700;
+
+  @media (max-width: $mini-tablet) {
+    display: none;
+  }
 }

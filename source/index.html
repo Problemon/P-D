@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-  <header class="page__header header">
+  <header class="page__header header" id="top">
     <nav class="header__navigation navigation">
       <button class="navigation__button-logo button-logo">
         <img class="button-logo__img" src="img/favicons/icon.svg" width="40" height="40" alt="">
@@ -21,13 +21,13 @@
       </button>
       <ul class="navigation__menu-list menu-list">
         <li class="menu-list__item">
-          <a class="menu-list__link menu-list__link--active" href="#">Главная</a>
+          <a class="menu-list__link" href="#top">Главная</a>
         </li>
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#">Услуги</a>
+          <a class="menu-list__link" href="#services">Услуги</a>
         </li>
         <li class="menu-list__item">
-          <a class="menu-list__link" href="#">Контакты</a>
+          <a class="menu-list__link" href="#contacts">Контакты</a>
         </li>
       </ul>
       <ul class="navigation__contact-list contact-list">
@@ -46,7 +46,7 @@
         качественный кальян для хорошего отдыха.
         Помогаем разбираться тем кто никогда не пробовал кальян.
       </p>
-      <button class="header__button button button--dark">
+      <a class="header__button button button--dark" href="https://vk.com/pa_n_dy">
         <svg class="button__icon" viewBox="0 0 28 28" width="28" height="28">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.546 4.546C3 6.093 3 8.582 3 13.56v.88c0 4.978 0 7.467 1.546 9.013C6.093 25 8.582 25 13.56 25h.88c4.978 0 7.467 0 9.013-1.547C25
           21.907 25 19.418 25 14.44v-.88c0-4.978 0-7.467-1.547-9.014C21.907
@@ -55,8 +55,8 @@
           3.288H21.4c-.716-2.615-2.598-4.061-3.774-4.614 1.175-.681 2.828-2.339
           3.223-4.586H18.48c-.514 1.823-2.038 3.481-3.489 3.638V9.7h-2.369v6.373c-1.469-.369-3.324-2.155-3.406-6.373H6.7z"></path>
         </svg>
-        <span class="button__text">Написать ВКонтакте</span>
-      </button>
+        <span class="button__text">Мы ВКонтакте</span>
+      </a>
     </div>
     <div class="itcss">
       <div class="itcss__wrapper">
@@ -84,14 +84,66 @@
     </div>
   </header>
   <section class="page__services services">
-    <h2 class="services__title title title--sub">Наши услуги</h2>
-    <ul class="services__list">
-      <li class="services__item">
-        <img class="services__img" src="#">
-
-      </li>
-    </ul>
+    <div class="services__container container">
+      <h2 class="services__title title title--sub" id="services">Наши услуги</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <a class="services__link" href="https://vk.com/pa_n_dy?w=product-212801624_5825385%2Fquery" target="_blank">
+            <picture>
+              <source srcset="img/items/EcoColoursLake.webp 1x, img/items/EcoColoursLake@2x.webp 2x">
+              <source srcset="img/items/EcoColoursLake.jpg 1x, img/items/EcoColoursLake@2x.jpg 2x">
+              <img class="services__img" src="img/items/EcoColoursLake.jpg" srcset="img/items/EcoColoursLake@2x.jpg 2x" width="274" height="auto" alt="Кальян Eco на фоне озера">
+            </picture>
+            <p class="services__item-description">
+              Кальян на сутки.
+            </p>
+            <span class="services__item-price">1 100 ₽</span>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="https://vk.com/pa_n_dy?w=product-212801624_5825391%2Fquery" target="_blank">
+            <picture>
+              <source srcset="img/items/EcoColoursLakeStove.webp 1x, img/items/EcoColoursLakeStove@2x.webp 2x">
+              <source srcset="img/items/EcoColoursLakeStove.jpg 1x, img/items/EcoColoursLakeStove@2x.jpg 2x">
+              <img class="services__img" src="img/items/EcoColoursLakeStove.jpg" srcset="img/items/EcoColoursLakeStove@2x.jpg 2x" width="274" height="auto" alt="Кальян Eco c электрической плиткой на фоне озера">
+            </picture>
+            <p class="services__item-description">
+              Кальян и плитка для розжига углей на сутки.
+            </p>
+            <span class="services__item-price">1 100 ₽</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
+  <section class="page__about about">
+    <div class="about__container container">
+      <h2 class="about__title title title--sub">Немного о "П&D" или Пэнди</h2>
+      <p class="about__text">
+        Мы предоставляем услуги аренды кальяна и доп. оборудования к нему пока что только в Лучегорске. Мы постоянно растем благодаря отзывам клиентов и делаем для них различные бонусы.
+        Арендуйте у нас кальян, даже если вы никогда не пробовали и хотели бы попробовать, мы все расскажем и поможем разобраться.
+      </p>
+    </div>
+  </section>
+  <section class="page__contacts contacts">
+    <div class="contacts__container container">
+      <h2 class="contacts__title title title--sub" id="contacts">Контакты</h2>
+      <div class="contacts__inner">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10997.413273699254!2d134.28769534334768!3d46.441695902355704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5eff6dde534abe11%3A0x25f7b10cfbf20ca2!2z0JvRg9GH0LXQs9C-0YDRgdC6LCDQn9GA0LjQvNC-0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2snl!4v1651535762493!5m2!1sru!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contacts__info">
+          <a class="contacts__phone" href="tel:+79245298839">+7 (924) 529-88-39</a>
+          <a class="contacts__link" href="https://vk.com/pa_n_dy">Мы ВКонтакте</a>
+          <a class="contacts__link" href="https://t.me/Pa_n_Dy">Написать в Telegram</a>
+          <p class="contacts__time">Время работы с 8:00 - 22:00. Без выходных</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page__footer footer">
+    <div class="footer__container container">
+      <a class="footer__developer" href="https://vk.com/problemonchik">Created by Pavel Danilets ©</a>
+    </div>
+  </footer>
   <script src="js/main.min.js" type="module"></script>
 </body>
 </html>

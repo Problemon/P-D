@@ -42,4 +42,8 @@
   &:active {
     transform: scale(0.9);
   }
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
 }

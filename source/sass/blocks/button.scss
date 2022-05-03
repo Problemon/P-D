@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
 
+  width: fit-content;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-right: 16px;
@@ -30,8 +31,25 @@
   color: $color-black;
   background-color: $color-white;
 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
   path {
     fill: $color-black;
+
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+
+    path {
+      fill: $color-white;
+    }
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 }
 
